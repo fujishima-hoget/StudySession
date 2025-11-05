@@ -1,7 +1,10 @@
 using UnityEngine;
 
-public class Node : MonoBehaviour
+public class GameManger : MonoBehaviour
 {
+    Node[,] wayPoints = new Node[10, 10];
+
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {

@@ -10,5 +10,11 @@ public class Enemy : MonoBehaviour
 
     List<Node> movePath;
 
+    INode target;
 
+    public void Init(PathFinder pathFinder,INode iNode)
+    {
+        this.pathFinder = pathFinder;
+        this.target = iNode;
+    }
 }

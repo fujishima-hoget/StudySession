@@ -32,7 +32,7 @@ public class PathFinder : MonoBehaviour
         }
     }
 
-    public List<Node> PathFind(Node startNode, Node endNode)
+    public List<Node> FindPath(Node startNode, Node endNode)
     {
         // 計算用のデータ構造
         Dictionary<Node, float> gScore = new();

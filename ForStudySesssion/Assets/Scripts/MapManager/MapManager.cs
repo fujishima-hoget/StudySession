@@ -60,11 +60,15 @@ public class MapManager : MonoBehaviour
         Target targetObject = Instantiate(target, new Vector3(targetPos.x * rate + 0.5f, 0.5f, targetPos.y * rate + 0.5f), Quaternion.identity);
         targetObject.Init(nodes[targetPos.x, targetPos.y]);
 
+        Debug.Log("ターゲットの現在位置ノード : " + targetObject.GetNode().X + "," + targetObject.GetNode().Y);
+
         for (int i = 0; i < trackers.Length; ++i)
         {
             Enemy enemy = Instantiate(trackers[i], new Vector3(trackersPos[i].x * rate + 0.5f, 0.5f, trackersPos[i].y * rate + 0.5f), Quaternion.identity);
 
-            enemy.Init(pathFinder, targetObject);
+            enemy.Init(pathFinder, targetObject, nodes[trackersPos[i].x, trackersPos[i].y]);
+
+            Debug.Log("エネミー" + i + "の現在位置ノード : " + enemy.GetNode().X + "," + enemy.GetNode().Y);
         }
 
 

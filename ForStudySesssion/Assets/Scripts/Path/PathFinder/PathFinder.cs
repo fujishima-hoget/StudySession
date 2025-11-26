@@ -82,6 +82,7 @@ public class PathFinder : MonoBehaviour
         }
 
         // Œo˜H‚È‚µ
+        Debug.Log("ˆÚ“®‰Â”\‚ÈŒo˜H‚ª‚ ‚è‚Ü‚¹‚ñ");
         return null;
     }
 

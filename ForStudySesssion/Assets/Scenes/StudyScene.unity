@@ -148,26 +148,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 30e777c3c663933438702860f495ae78, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nodeCountX: 20
-  nodeCountY: 20
+  nodeCountX: 50
+  nodeCountY: 50
   normalNodePrefab: {fileID: -5564925954665177845, guid: 4bb2f29ccabb18845a742d8d56165674, type: 3}
   sandNodePrefab: {fileID: 1637374454671110870, guid: 3e470d401f7a21244969957d812d5f25, type: 3}
   waterNodePrefab: {fileID: 3391460884874313393, guid: 3917dbb823eac6e4eaa94a908f148e21, type: 3}
   rate: 5
   pathFinder: {fileID: 1425676895}
   target: {fileID: 8799796892476154926, guid: e84a3c79950c7294fbdc3e76fe3e8b4f, type: 3}
-  targetPos: {x: 0, y: 0}
+  targetPos: {x: 48, y: 20}
   trackers:
   - {fileID: 1699603216564622444, guid: 5b3629c283db6bd4aa071058e8a823fb, type: 3}
   - {fileID: 1699603216564622444, guid: 5b3629c283db6bd4aa071058e8a823fb, type: 3}
   - {fileID: 1699603216564622444, guid: 5b3629c283db6bd4aa071058e8a823fb, type: 3}
+  - {fileID: 1699603216564622444, guid: 5b3629c283db6bd4aa071058e8a823fb, type: 3}
   trackersPos:
-  - {x: 10, y: 10}
-  - {x: 11, y: 17}
-  - {x: 1, y: 19}
+  - {x: 3, y: 47}
+  - {x: 5, y: 8}
+  - {x: 38, y: 10}
+  - {x: 47, y: 43}
   normalCost: 1
-  sandCost: 30
-  waterCost: 60
+  sandCost: 50
+  waterCost: 100
   resetButton: {fileID: 1119808487}
 --- !u!4 &226089834
 Transform:
